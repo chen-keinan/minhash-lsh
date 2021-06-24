@@ -128,8 +128,8 @@ func newMinhashLSH(threshold float64, numHash, hashValueSize, initSize int) *Min
 }
 
 // NewMinhashLSH64 uses 64-bit hash values and pre-allocation of hash tables.
-func NewMinhashLSH64(numHash int, threshold float64, initSize int) *MinhashLSH {
-	return newMinhashLSH(threshold, numHash, 8, initSize)
+func NewMinhashLSH64(numHash int, threshold float64) *MinhashLSH {
+	return newMinhashLSH(threshold, numHash, 8, 64)
 }
 
 // NewMinhashLSH32 uses 32-bit hash values and pre-allocation of hash tables.
